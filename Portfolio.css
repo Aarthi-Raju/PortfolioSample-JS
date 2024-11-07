@@ -39,7 +39,7 @@ body {
     padding-bottom: 20px;
     position: fixed;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
 
     * {
         color: white;
@@ -851,6 +851,328 @@ body {
             font-size: 18px;
         }
     }
+}
+
+
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0px;
+
+    #faqTopUp {
+        font-size: 17px;
+        color: rgb(66, 66, 66);
+        text-align: center;
+    }
+
+    #accordionPanelsStayOpenExample {
+        margin-top: 50px;
+
+        #accordionItem {
+            margin-bottom: 30px;
+            border-radius: 5px;
+            border: none;
+
+            h2 button {
+                border: none;
+                outline: none;
+                background: none;
+                box-shadow: none;
+                color: #37517e;
+                font-size: 16px;
+                margin-bottom: 0;
+                border-bottom: none;
+                font-weight: bold;
+
+                span {
+                    color: #47b2e4;
+                    font-weight: bolder;
+                    margin-right: 15px;
+                }
+
+            }
+
+            button:hover {
+                color: #47b2e4;
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: #47b2e4;
+            }
+
+            .accordion-collapse .accordion-body {
+                margin-top: 0;
+                padding-top: 0;
+                font-size: 15px;
+
+                * {
+                    color: rgb(101, 100, 100);
+                }
+
+                padding-bottom: 30px;
+            }
+
+        }
+    }
+
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0px;
+
+
+    #ContactTopUp {
+        font-size: 18px;
+        color: rgb(66, 66, 66);
+    }
+
+    #contactAbout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        #contactLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            border-top: 3px #47b2e4 solid;
+            border-bottom: 3px #47b2e4 solid;
+            padding: 30px 35px;
+            box-shadow: 0px 0px 25px rgb(216, 216, 216);
+
+            #contactDetailCards {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 25px;
+
+                #contactDetail {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                    #detailAbout {
+                        #detailName {
+                            font-weight: bold;
+                            color: #26395a;
+                            font-size: 18px;
+                        }
+
+                        #detailDes {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            iframe {
+                width: 450px;
+                height: 300px;
+            }
+        }
+
+        #contactRight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-top: 3px #47b2e4 solid;
+            border-bottom: 3px #47b2e4 solid;
+            padding: 45px 40px;
+            box-shadow: 0px 0px 25px rgba(216, 216, 216, 0.76);
+
+            #contactRightAbout {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 30px;
+
+                #nameEmail {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+
+                    #fieldTotal {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+                        gap: 10px;
+
+                        input {
+                            border: none;
+                            outline: none;
+                            border: 1px rgba(202, 202, 202, 0.822) solid;
+                            width: 300px;
+                            padding: 8px 15px;
+                        }
+                    }
+                }
+
+                #fieldTotal {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+
+                    input {
+                        border: none;
+                        outline: none;
+                        border: 1px rgba(202, 202, 202, 0.822) solid;
+                        width: 630px;
+                        padding: 8px 15px;
+                    }
+
+                    textarea {
+                        border: none;
+                        outline: none;
+                        padding: 8px 15px;
+                        border: 1px rgba(202, 202, 202, 0.822) solid;
+                    }
+                }
+            }
+
+            button {
+                border: none;
+                outline: none;
+                background-color: #47b2e4;
+                color: white;
+                padding: 10px 25px;
+                border-radius: 50px;
+            }
+
+            * {
+                #fieldName {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+
+    #footerAbout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        #footerHead {
+            font-size: 25px;
+            color: rgb(66, 66, 66);
+            font-weight: bold;
+        }
+
+        #footerSearch {
+            box-shadow: 0px 0px 25px rgba(155, 155, 155, 0.801);
+            border-radius: 50px;
+
+            input {
+                width: 500px;
+                border: none;
+                outline: none;
+                padding: 10px 15px;
+                border-radius: 50px;
+            }
+
+            button {
+                border: none;
+                outline: none;
+                background-color: #47b2e4;
+                color: white;
+                padding: 10px 25px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    #footerMenu {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        align-items: start;
+        margin: 50px 150px;
+        #foodMenuColumn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            #mainName {
+                font-size: 30px;
+                font-weight: bolder;
+                color: #37517e;
+            }
+
+            #colHead{
+                font-size: 15px;
+                color: #37517e;
+                font-weight: bold;
+            }
+
+            #data{
+                font-size: 15px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            #media{
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+                align-items: center;
+                gap: 15px;
+                i{
+                    font-size: 18px;
+                    border: 2px rgba(155, 155, 155, 0.801) solid;
+                    padding: 8px;
+                    border-radius: 50%;
+                    color: rgba(155, 155, 155, 0.801);
+                }
+            }
+        }
+    }
+
 }
 
 /* ----------------aimation on scrolling--------------------------------------- */

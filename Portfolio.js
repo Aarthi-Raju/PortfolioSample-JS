@@ -23,3 +23,9 @@ $(document).ready(function () {
         ]
     })
 });
+
+
+var searchActive = document.getElementById("searchInp");
+searchActive.addEventListener('focus',()=>{
+    document.getElementById("footerSearch").style.border = "2px #47b2e4 solid"
+})
